@@ -1,4 +1,4 @@
-  :root {
+:root {
     --gold: #c9942a;
     --gold-light: #f0d898;
     --gold-pale: #fdf6e3;
@@ -262,6 +262,45 @@
   @media (max-width: 600px) {
     .track-card { padding: 40px 24px; }
   }
+
+  /* HAMBURGER MENU BUTTON */
+  .menu-toggle {
+    display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+    gap: 5px; width: 26px; height: 20px; background: none; border: none;
+    cursor: pointer; padding: 0; z-index: 101; margin-right: 4px;
+  }
+  .menu-toggle span { display: block; width: 100%; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s ease; }
+  .nav-left { display: flex; align-items: center; gap: 16px; }
+
+  /* MOBILE MENU OVERLAY */
+  .mobile-menu {
+    position: fixed; inset: 0; background: var(--white); z-index: 200;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 64px 24px 40px; overflow-y: auto;
+    transform: translateY(-12px); opacity: 0; visibility: hidden;
+    transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+  }
+  .mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; }
+  .mobile-menu-close {
+    position: absolute; top: 22px; right: 24px; background: none; border: none;
+    font-size: 30px; line-height: 1; color: var(--text-muted); cursor: pointer;
+    width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+  }
+  .mobile-menu-close:hover { color: var(--gold); }
+  .mobile-menu-logo { text-align: center; margin-bottom: 36px; }
+  .mobile-menu-logo img { height: 76px; width: 76px; object-fit: contain; margin-bottom: 10px; }
+  .mobile-menu-brand { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 600; color: var(--dark); letter-spacing: 3px; }
+  .mobile-menu-brand-sub { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--text-muted); margin-top: 2px; }
+  .mobile-menu-links { display: flex; flex-direction: column; width: 100%; max-width: 360px; }
+  .mobile-menu-links a {
+    display: flex; align-items: center; gap: 14px;
+    padding: 17px 6px; text-decoration: none; color: var(--text);
+    font-size: 16px; font-weight: 400; border-bottom: 1px solid var(--border);
+    transition: color 0.25s ease, padding-left 0.25s ease;
+  }
+  .mobile-menu-links a:hover { color: var(--gold); padding-left: 10px; }
+  .mobile-menu-links a.active { color: var(--gold); font-weight: 600; background: var(--gold-pale); border-radius: 4px; padding-left: 14px; }
+  body.menu-open { overflow: hidden; }
 
   /* WHATSAPP FLOTTANT */
   .whatsapp-float {
