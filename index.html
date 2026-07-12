@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cours de Coran en ligne — Falah Institut</title>
-<meta name="description" content="Cours de Coran en ligne pour hommes, femmes et enfants. Formules collectives ou individuelles via Zoom, accompagnement personnalisé.">
+<title>Falah Institut — Arabe & Coran en ligne</title>
+<meta name="description" content="Falah Institut : cours en ligne d'arabe et de Coran pour hommes, femmes et enfants. Cours collectifs ou individuels via Zoom, enseignants qualifiés, horaires flexibles.">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-<meta property="og:title" content="Cours de Coran en ligne — Falah Institut">
-<meta property="og:description" content="Cours de Coran en ligne pour hommes, femmes et enfants, via Zoom.">
+<meta property="og:title" content="Falah Institut — Arabe & Coran en ligne">
+<meta property="og:description" content="Cours en ligne d'arabe et de Coran pour hommes, femmes et enfants. Cours collectifs ou individuels via Zoom.">
 <meta property="og:image" content="https://falahinstitut.github.io/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://falahinstitut.github.io/coran.html">
+<meta property="og:url" content="https://falahinstitut.github.io/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cours de Coran en ligne — Falah Institut">
+<meta name="twitter:title" content="Falah Institut — Arabe & Coran en ligne">
+<meta name="twitter:description" content="Cours en ligne d'arabe et de Coran pour hommes, femmes et enfants.">
 <meta name="twitter:image" content="https://falahinstitut.github.io/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,23 +26,33 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Cours de Coran en ligne",
-  "description": "Cours de Coran en ligne pour hommes, femmes et enfants. Formules collectives ou individuelles via Zoom, accompagnement personnalisé.",
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "Falah Institut",
-    "url": "https://falahinstitut.github.io/"
+  "@type": "EducationalOrganization",
+  "name": "Falah Institut",
+  "url": "https://falahinstitut.github.io/",
+  "logo": "https://falahinstitut.github.io/logo.png",
+  "image": "https://falahinstitut.github.io/og-image.jpg",
+  "description": "Institut en ligne d'apprentissage de la langue arabe et du Coran, pour hommes, femmes et enfants. Cours collectifs et individuels via Zoom.",
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+33651969750",
+    "contactType": "customer service",
+    "areaServed": "FR",
+    "availableLanguage": ["French", "Arabic"]
   },
-  "hasCourseInstance": [
-    { "@type": "CourseInstance", "courseMode": "online", "name": "Formule collective", "offers": { "@type": "Offer", "price": "35", "priceCurrency": "EUR" } },
-    { "@type": "CourseInstance", "courseMode": "online", "name": "Formule individuelle", "offers": { "@type": "Offer", "price": "40", "priceCurrency": "EUR" } },
-    { "@type": "CourseInstance", "courseMode": "online", "name": "Formule individuelle intensive", "offers": { "@type": "Offer", "price": "70", "priceCurrency": "EUR" } }
-  ]
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Formations Falah Institut",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Cours de Langue Arabe" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Course", "name": "Cours de Coran" } }
+    ]
+  }
 }
 </script>
 </head>
 <body>
+
 <!-- NAV -->
 <nav>
   <div class="nav-left">
@@ -58,122 +69,105 @@
 <!-- MOBILE MENU OVERLAY -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-links">
-      <a href="index.html">Accueil</a>
+      <a href="index.html" class="active">Accueil</a>
       <a href="arabe.html">Cours d'Arabe</a>
-      <a href="coran.html" class="active">Cours de Coran</a>
+      <a href="coran.html">Cours de Coran</a>
       <a href="#avis">Avis</a>
       <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20vos%20cours." target="_blank" rel="noopener">Contact</a>
   </div>
 </div>
 
 
-<!-- SUBHERO -->
-<section class="subhero" style="background-image:url('coran.jpg');">
-  <div class="container subhero-inner">
-    <a href="index.html" class="back-link">← Retour à l'accueil</a>
-    <div class="section-label"><span>Nos formations</span></div>
-    <h1>Cours de Coran</h1>
-    <p>Progressez dans votre lecture et votre récitation du Coran avec un accompagnement personnalisé et bienveillant. Pour les hommes, les femmes et les enfants, quel que soit votre niveau.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="arabic-watermark">فلاح</div>
+  <div class="hero-inner">
+    <div class="hero-content">
+    <div class="hero-logo-wrap" style="display:none">
+      <img src="logo.png" alt="Falah Institut">
+    </div>
+    <h1>Apprenez l'<em>Arabe</em><br>& le <em>Coran</em> en ligne</h1>
+    <p class="hero-sub">Des cours pour les hommes, les femmes et les enfants, en petit groupe ou individuels, avec des enseignants qualifiés et bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.</p>
+    <div class="hero-cta">
+      <a href="#offres" class="btn-gold">Voir les offres</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><span class="ico">⭐</span> Avis vérifiés d'élèves</div>
+      <div class="hero-trust-item"><span class="ico">💻</span> Cours en direct via Zoom</div>
+      <div class="hero-trust-item"><span class="ico">🕌</span> Enseignement authentique</div>
+      <div class="hero-trust-item"><span class="ico">📱</span> Réponse rapide sur WhatsApp</div>
+    </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-frame">
+        <img src="mosquee.jpg" alt="Intérieur de mosquée">
+      </div>
+    </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- OFFRES -->
-<section class="offres" id="offres">
+<!-- FEATURES -->
+<section class="features">
   <div class="container">
-    <div class="offres-intro fade-in">
-      <div class="section-label"><span>Tarifs</span></div>
-      <h2 class="section-title">Choisissez votre formule</h2>
-      <p class="section-sub">Des cours en ligne pour tous les niveaux, animés par des enseignants passionnés.</p>
+    <div class="features-intro fade-in">
+      <div class="section-label"><span>Pourquoi nous choisir</span></div>
+      <h2 class="section-title">Une pédagogie qui fait la différence</h2>
+      <p class="section-sub">Tout est pensé pour que vous progressiez sereinement, où que vous soyez.</p>
     </div>
-    <div class="offres-grid">
-        <div class="offre-card standard">
-          <span class="offre-tag">Cours collectif</span>
-          <div class="offre-price"><span class="price-num">35€</span><span class="price-unit">/ mois</span></div>
-          <div class="offre-title">En groupe</div>
-          <p class="offre-desc offre-subtitle">Apprenez en communauté dans une ambiance motivante et bienveillante.</p>
-          <div class="offre-sep"></div>
-          <ul class="offre-features offre-features-emoji">
-            <li>🕖 Cours 2h/semaine</li>
-            <li>💻 Cours en ligne via Zoom</li>
-            <li>Groupe de 6 élèves maximum</li>
-          </ul>
-          <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20la%20formule%20Collectif%20%28Coran%29.%20Pouvez-vous%20me%20donner%20plus%20d%27informations%20%3F" target="_blank" rel="noopener" class="btn-offre">Choisir cette offre</a>
-        </div>
-        <div class="offre-card premium">
-          <span class="offre-tag">👤 Individuel</span>
-          <div class="offre-price"><span class="price-num">40€</span><span class="price-unit">/ mois</span></div>
-          <div class="offre-title">Individuel</div>
-          <p class="offre-desc offre-subtitle">Un apprentissage sur mesure</p>
-          <div class="offre-sep"></div>
-          <ul class="offre-features offre-features-emoji">
-            <li>🕖 Cours 1h/semaine</li>
-            <li>✔️ Cours privés adaptés à vos objectifs</li>
-            <li>✔️ Flexibilité totale : choisissez vos horaires</li>
-            <li>💻 Cours en ligne via Zoom</li>
-            <li>⏰ Horaires adaptés à vos disponibilités du Lundi au Dimanche de 9h à 21h</li>
-          </ul>
-          <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20la%20formule%20Individuel%20%28Coran%29.%20Pouvez-vous%20me%20donner%20plus%20d%27informations%20%3F" target="_blank" rel="noopener" class="btn-offre">Choisir cette offre</a>
-        </div>
-        <div class="offre-card standard">
-          <span class="offre-tag">👤 Individuel</span>
-          <div class="offre-price"><span class="price-num">70€</span><span class="price-unit">/ mois</span></div>
-          <div class="offre-title">Individuel Intensif</div>
-          <p class="offre-desc offre-subtitle">Un apprentissage sur mesure</p>
-          <div class="offre-sep"></div>
-          <ul class="offre-features offre-features-emoji">
-            <li>🕖 Cours 2h/semaine</li>
-            <li>✔️ Cours privés adaptés à vos objectifs</li>
-            <li>✔️ Flexibilité totale : choisissez vos horaires</li>
-            <li>💻 Cours en ligne via Zoom</li>
-            <li>⏰ Horaires adaptés à vos disponibilités du Lundi au Dimanche de 9h à 21h</li>
-          </ul>
-          <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20la%20formule%20Individuel%20Intensif%20%28Coran%29.%20Pouvez-vous%20me%20donner%20plus%20d%27informations%20%3F" target="_blank" rel="noopener" class="btn-offre">Choisir cette offre</a>
-        </div>
+    <div class="features-grid fade-in">
+      <div class="feature-card">
+        <div class="feature-icon">🎓</div>
+        <div class="feature-title">Enseignants qualifiés</div>
+        <div class="feature-desc">Des professeurs sérieux, patients et pédagogues, sélectionnés pour la qualité de leur enseignement.</div>
       </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <div class="feature-title">Suivi personnalisé</div>
+        <div class="feature-desc">Chaque élève progresse à son rythme, avec un accompagnement adapté à son niveau et ses objectifs.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🕖</div>
+        <div class="feature-title">Horaires flexibles</div>
+        <div class="feature-desc">Cours disponibles 7j/7 de 9h à 21h, pour s'organiser facilement autour de votre emploi du temps.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <div class="feature-title">Contact direct</div>
+        <div class="feature-desc">Une équipe réactive et disponible sur WhatsApp pour répondre à toutes vos questions.</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- GUIDE -->
-<section class="guide">
+<!-- TRACKS (choix Arabe / Coran) -->
+<section class="tracks" id="offres">
   <div class="container">
-    <div class="guide-intro fade-in">
-      <div class="section-label"><span>Vous hésitez ?</span></div>
-      <h2 class="section-title">Quelle formule vous correspond ?</h2>
-      <p class="section-sub">Un petit guide pour vous aider à choisir la formule la plus adaptée à votre situation.</p>
+    <div class="tracks-intro fade-in">
+      <div class="section-label"><span>Nos formations</span></div>
+      <h2 class="section-title">Choisissez votre parcours</h2>
+      <p class="section-sub">Deux enseignements, une même exigence de qualité. Découvrez nos formules dédiées.</p>
     </div>
-    <div class="guide-list fade-in">
-      <div class="guide-item">
-        <div class="guide-icon">🎯</div>
-        <div>
-          <div class="guide-q">Je veux un accompagnement sur-mesure, à mon rythme</div>
-          <div class="guide-a">Optez pour la formule <strong>Individuelle</strong>. Vous bénéficiez d'un enseignant dédié, d'horaires flexibles et d'un programme entièrement adapté à votre niveau.</div>
+    <div class="tracks-grid fade-in">
+      <a href="arabe.html" class="track-card">
+        <div class="track-image" style="background-image:url('calligraphie.jpg');"></div>
+        <div class="track-body">
+          <div class="track-title">Langue Arabe</div>
+          <div class="track-desc">Apprenez à lire, écrire et comprendre l'arabe grâce à des méthodes reconnues, du niveau débutant au niveau avancé.</div>
+          <div class="track-link">Voir les formules <span class="arrow">→</span></div>
         </div>
-      </div>
-      <div class="guide-item">
-        <div class="guide-icon">🚀</div>
-        <div>
-          <div class="guide-q">Je veux progresser le plus rapidement possible</div>
-          <div class="guide-a">La formule <strong>Individuelle Intensif</strong> (2h/semaine) est faite pour vous : plus d'heures de cours, une progression accélérée, toujours en tête-à-tête avec votre enseignant.</div>
+      </a>
+      <a href="coran.html" class="track-card">
+        <div class="track-image" style="background-image:url('coran.jpg');"></div>
+        <div class="track-body">
+          <div class="track-title">Coran</div>
+          <div class="track-desc">Progressez dans votre lecture et votre récitation du Coran avec un accompagnement personnalisé et bienveillant.</div>
+          <div class="track-link">Voir les formules <span class="arrow">→</span></div>
         </div>
-      </div>
-      <div class="guide-item">
-        <div class="guide-icon">🤝</div>
-        <div>
-          <div class="guide-q">J'apprends mieux entouré(e), dans une dynamique de groupe</div>
-          <div class="guide-a">La formule <strong>Collectif</strong> est idéale : vous progressez avec d'autres élèves de votre niveau, dans une ambiance motivante, pour un tarif plus accessible.</div>
-        </div>
-      </div>
-      <div class="guide-item">
-        <div class="guide-icon">💬</div>
-        <div>
-          <div class="guide-q">Je ne sais pas encore laquelle choisir</div>
-          <div class="guide-a">Pas de souci ! Contactez-nous directement sur WhatsApp, on prend le temps d'échanger avec vous pour vous orienter vers la formule la plus adaptée.</div>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -202,6 +196,17 @@
       </div>
       <div class="avis-card audio-card">
         <div class="avis-audio-badge">🎙️ Témoignage audio</div>
+        <audio class="avis-audio-player" controls preload="none" src="temoignage-mohamed-arabe.mp3">
+          Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+        <div class="avis-sep"></div>
+        <div class="avis-author">
+          <div class="avis-avatar">M</div>
+          <div><div class="avis-name">Mohamed</div><div class="avis-source">Via WhatsApp</div></div>
+        </div>
+      </div>
+      <div class="avis-card audio-card">
+        <div class="avis-audio-badge">🎙️ Témoignage audio</div>
         <audio class="avis-audio-player" controls preload="none" src="temoignage-mohamed-coran.mp3">
           Votre navigateur ne supporte pas la lecture audio.
         </audio>
@@ -209,6 +214,17 @@
         <div class="avis-author">
           <div class="avis-avatar">M</div>
           <div><div class="avis-name">Mohamed</div><div class="avis-source">Via WhatsApp</div></div>
+        </div>
+      </div>
+      <div class="avis-card audio-card">
+        <div class="avis-audio-badge">🎙️ Témoignage audio</div>
+        <audio class="avis-audio-player" controls preload="none" src="temoignage-nassera.mp3">
+          Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+        <div class="avis-sep"></div>
+        <div class="avis-author">
+          <div class="avis-avatar">N</div>
+          <div><div class="avis-name">Nassera</div><div class="avis-source">Via WhatsApp</div></div>
         </div>
       </div>
       <div class="avis-card">
@@ -296,6 +312,7 @@
     </div>
   </div>
 </section>
+
 <div class="divider"></div>
 
 <!-- FAQ -->
@@ -308,7 +325,7 @@
     </div>
     <div class="faq-list fade-in">
       <details class="faq-item">
-        <summary>Je ne sais pas encore lire le Coran, puis-je m'inscrire ?</summary>
+        <summary>Je n'ai aucun niveau en arabe, puis-je m'inscrire ?</summary>
         <p class="faq-answer">Bien sûr ! Nos formules s'adaptent à tous les niveaux, du débutant complet à l'élève confirmé. Un premier échange sur WhatsApp permet de définir le point de départ le plus adapté.</p>
       </details>
       <details class="faq-item">
@@ -344,7 +361,7 @@
 <!-- CTA FINALE -->
 <section class="final-cta">
   <div class="container final-cta-inner">
-    <h2>Prêt(e) à progresser dans le Coran ?</h2>
+    <h2>Prêt(e) à commencer votre apprentissage ?</h2>
     <p>Rejoignez nos élèves et progressez dans une ambiance sérieuse et bienveillante. Un simple message suffit pour démarrer.</p>
     <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20vos%20cours." target="_blank" rel="noopener" class="btn-gold">Contactez-nous sur WhatsApp</a>
   </div>
