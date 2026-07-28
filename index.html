@@ -26,26 +26,30 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-  /* Override pour forcer une vidéo TRÈS LARGE sur ordinateur */
+  /* Override strict pour forcer la vidéo à être IMMENSE sur PC */
   @media (min-width: 992px) {
-    .hero .container,
     .hero-inner {
-      max-width: 1400px !important; /* Elargit la zone globale du Hero */
+      max-width: 96% !important; /* Utilise 96% de la largeur totale de l'écran */
+      width: 100% !important;
       display: flex !important;
       align-items: center !important;
       justify-content: space-between !important;
-      gap: 50px !important;
-      width: 100% !important;
+      gap: 4% !important; /* Espace proportionnel entre texte et vidéo */
     }
+    
     .hero-content {
-      flex: 1 1 40% !important;
-      max-width: 45% !important;
+      flex: 0 0 35% !important; /* Le texte est bloqué à 35% de l'écran */
+      max-width: 500px !important;
     }
+    
     .hero-visual {
-      flex: 1 1 60% !important;
+      flex: 0 0 60% !important; /* LA VIDÉO PREND STRICTEMENT 60% DE L'ÉCRAN */
+      max-width: none !important; /* Fait sauter l'ancienne limite de largeur */
       width: 100% !important;
-      max-width: 1000px !important; /* Vidéo XXL sur PC */
-      min-width: 550px !important;
+    }
+    
+    .hero-image-frame {
+      width: 100% !important; /* Assure que le cadre iframe suit le conteneur */
     }
   }
 </style>
