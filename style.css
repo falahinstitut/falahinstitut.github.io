@@ -1,14 +1,15 @@
   :root {
-    --gold: #c9942a;
-    --gold-light: #f0d898;
-    --gold-pale: #fdf6e3;
-    --white: #ffffff;
-    --cream: #fdfaf4;
-    --dark: #1a1208;
-    --text: #2a1f0a;
-    --text-muted: #8a7550;
-    --border: #e8d9b0;
-  }
+  /* PALETTE BLEU MARINE & DORÉ - FALAH INSTITUT */
+  --primary: #0f172a;        /* Bleu Marine Profond */
+  --primary-hover: #1e293b;  /* Bleu Survol */
+  --accent: #d97706;         /* Doré / Ambré Chaud */
+  --accent-hover: #b45309;   /* Doré Survol */
+  --accent-light: #fffbeb;   /* Fond ambré ultra clair */
+  --text-dark: #0f172a;      /* Texte principal sombre */
+  --text-muted: #64748b;     /* Texte secondaire */
+  --bg-light: #f8fafc;       /* Fond de page bleu-gris clair */
+  --white: #ffffff;
+}
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { overflow-x: hidden; }
   body { font-family: 'Outfit', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; position: relative; }
