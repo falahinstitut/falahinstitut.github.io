@@ -26,42 +26,39 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-  /* On force l'affichage en colonne sur tous les écrans pour avoir une vidéo immense */
-  .hero-inner {
-    display: flex !important;
-    /* Utilise "column" si tu veux le texte en haut et la vidéo en bas */
-    /* Utilise "column-reverse" si tu veux la vidéo tout en haut et le texte en bas */
-    flex-direction: column !important; 
-    align-items: center !important;
-    text-align: center !important;
-    gap: 40px !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-  }
+  /* Retour au design propre : Texte à gauche, Vidéo bien large à droite */
+  @media (min-width: 992px) {
+    .hero-inner {
+      display: flex !important;
+      flex-direction: row !important; /* Force l'affichage côte à côte */
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 50px !important;
+      max-width: 1250px !important; /* Conteneur global assez large */
+      margin: 0 auto !important;
+    }
+    
+    .hero-content {
+      flex: 0 0 45% !important; /* Le texte prend 45% de l'espace */
+      text-align: left !important;
+    }
+    
+    .hero-visual {
+      flex: 0 0 55% !important; /* La vidéo prend 55% de l'espace */
+      max-width: 700px !important; /* Limite max pour ne pas pixeliser */
+      width: 100% !important;
+    }
 
-  .hero-visual {
-    width: 100% !important;
-    max-width: 1100px !important; /* La vidéo prendra presque tout l'écran */
-  }
-
-  .hero-content {
-    width: 100% !important;
-    max-width: 800px !important;
-  }
-
-  /* On centre les éléments de réassurance sous le texte */
-  .hero-trust {
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-  }
-  
-  /* On centre la bannière promo */
-  .promo-banner {
-    margin: 0 auto 20px auto !important;
+    /* On s'assure que le texte et les badges sont bien alignés à gauche */
+    .hero-trust {
+      justify-content: flex-start !important;
+    }
+    .promo-banner {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+    }
   }
 </style>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
