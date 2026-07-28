@@ -26,31 +26,39 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-  /* Override strict pour forcer la vidéo à être IMMENSE sur PC */
-  @media (min-width: 992px) {
-    .hero-inner {
-      max-width: 96% !important; /* Utilise 96% de la largeur totale de l'écran */
-      width: 100% !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 4% !important; /* Espace proportionnel entre texte et vidéo */
-    }
-    
-    .hero-content {
-      flex: 0 0 35% !important; /* Le texte est bloqué à 35% de l'écran */
-      max-width: 500px !important;
-    }
-    
-    .hero-visual {
-      flex: 0 0 60% !important; /* LA VIDÉO PREND STRICTEMENT 60% DE L'ÉCRAN */
-      max-width: none !important; /* Fait sauter l'ancienne limite de largeur */
-      width: 100% !important;
-    }
-    
-    .hero-image-frame {
-      width: 100% !important; /* Assure que le cadre iframe suit le conteneur */
-    }
+  /* On force l'affichage en colonne sur tous les écrans pour avoir une vidéo immense */
+  .hero-inner {
+    display: flex !important;
+    /* Utilise "column" si tu veux le texte en haut et la vidéo en bas */
+    /* Utilise "column-reverse" si tu veux la vidéo tout en haut et le texte en bas */
+    flex-direction: column !important; 
+    align-items: center !important;
+    text-align: center !important;
+    gap: 40px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .hero-visual {
+    width: 100% !important;
+    max-width: 1100px !important; /* La vidéo prendra presque tout l'écran */
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 800px !important;
+  }
+
+  /* On centre les éléments de réassurance sous le texte */
+  .hero-trust {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+  
+  /* On centre la bannière promo */
+  .promo-banner {
+    margin: 0 auto 20px auto !important;
   }
 </style>
 
