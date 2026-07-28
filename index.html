@@ -111,9 +111,9 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       </div>
     </div>
     
-    <!-- Vidéo intégrée à la place de l'image de la mosquée -->
-    <div class="hero-visual">
-      <div class="hero-image-frame" style="padding-top: 56.25%; position: relative; height: 0; overflow: hidden; border-radius: 12px;">
+    <!-- Vidéo agrandie dans le hero -->
+    <div class="hero-visual" style="width: 100%; max-width: 600px; margin: 0 auto;">
+      <div class="hero-image-frame" style="padding-top: 56.25%; position: relative; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
         <iframe 
           src="https://www.youtube.com/embed/qF54f6sBMEQ" 
           title="Présentation de Falah Institut" 
@@ -225,48 +225,54 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <div class="features-grid fade-in">
       
       <!-- Offre Groupe -->
-      <div class="feature-card" style="border: 1px solid var(--accent, #d97706); position: relative; text-align: center;">
+      <div class="feature-card" style="border: 1px solid var(--accent, #d97706); position: relative; text-align: center; display: flex; flex-direction: column; justify: space-between;">
         <div style="background: var(--accent, #d97706); color: #fff; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; position: absolute; top: -12px; left: 50%; transform: translateX(-50%);">
           Plus populaire
         </div>
-        <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Cours en Groupe</div>
-        <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">35€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
-        <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">2 heures par semaine</div>
-        <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
-          <p style="margin-bottom: 8px;">✓ Apprentissage dynamique en petit groupe</p>
-          <p style="margin-bottom: 8px;">✓ 2h de cours hebdomadaires</p>
-          <p style="margin-bottom: 8px;">✓ Suivi régulier du professeur</p>
-          <p>✓ Supports de cours inclus</p>
+        <div>
+          <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Cours en Groupe</div>
+          <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">35€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
+          <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">2 heures par semaine</div>
+          <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
+            <p style="margin-bottom: 8px;">✓ Apprentissage dynamique en petit groupe</p>
+            <p style="margin-bottom: 8px;">✓ 2h de cours hebdomadaires</p>
+            <p style="margin-bottom: 8px;">✓ Suivi régulier du professeur</p>
+            <p>✓ Supports de cours inclus</p>
+          </div>
         </div>
         <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20m%27inscrire%20au%20Cours%20en%20Groupe%20(35%E2%82%AC%2Fmois)" target="_blank" rel="noopener" class="btn-gold" style="display: block; width: 100%; text-align: center;">S'inscrire en Groupe</a>
       </div>
 
       <!-- Offre 1H Individuel -->
-      <div class="feature-card" style="text-align: center;">
-        <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Individuel (1H)</div>
-        <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">40€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
-        <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">1 heure par semaine</div>
-        <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
-          <p style="margin-bottom: 8px;">✓ Accompagnement 100% sur-mesure</p>
-          <p style="margin-bottom: 8px;">✓ 1h de cours individuel / semaine</p>
-          <p style="margin-bottom: 8px;">✓ Flexibilité d'horaires</p>
-          <p>✓ Progression à votre rythme</p>
+      <div class="feature-card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Individuel (1H)</div>
+          <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">40€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
+          <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">1 heure par semaine</div>
+          <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
+            <p style="margin-bottom: 8px;">✓ Accompagnement 100% sur-mesure</p>
+            <p style="margin-bottom: 8px;">✓ 1h de cours individuel / semaine</p>
+            <p style="margin-bottom: 8px;">✓ Flexibilité d'horaires</p>
+            <p>✓ Progression à votre rythme</p>
+          </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20m%27inscrire%20au%20Cours%20Individuel%201H%20(40%E2%82%AC%2Fmois)" target="_blank" rel="noopener" class="btn-gold" style="display: block; width: 100%; text-align: center; background: transparent; border: 1px solid var(--accent, #d97706);">S'inscrire (1H/sem)</a>
+        <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20m%27inscrire%20au%20Cours%20Individuel%201H%20(40%E2%82%AC%2Fmois)" target="_blank" rel="noopener" class="btn-gold" style="display: block; width: 100%; text-align: center;">S'inscrire (1H/sem)</a>
       </div>
 
       <!-- Offre 2H Individuel Intensif -->
-      <div class="feature-card" style="text-align: center;">
-        <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Individuel Intensif (2H)</div>
-        <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">70€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
-        <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">2 heures par semaine</div>
-        <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
-          <p style="margin-bottom: 8px;">✓ Programme personnalisé intensif</p>
-          <p style="margin-bottom: 8px;">✓ 2h de cours individuel / semaine</p>
-          <p style="margin-bottom: 8px;">✓ Priorité sur les créneaux</p>
-          <p>✓ Suivi d'apprentissage poussé</p>
+      <div class="feature-card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div class="feature-title" style="margin-top: 10px; font-size: 1.4rem;">Individuel Intensif (2H)</div>
+          <div style="font-size: 2.2rem; font-weight: 700; margin: 15px 0 5px 0;">70€ <span style="font-size: 0.9rem; font-weight: normal; opacity: 0.8;">/ mois</span></div>
+          <div style="color: var(--accent, #d97706); font-weight: 600; margin-bottom: 20px; font-size: 0.95rem;">2 heures par semaine</div>
+          <div class="feature-desc" style="text-align: left; margin-bottom: 25px;">
+            <p style="margin-bottom: 8px;">✓ Programme personnalisé intensif</p>
+            <p style="margin-bottom: 8px;">✓ 2h de cours individuel / semaine</p>
+            <p style="margin-bottom: 8px;">✓ Priorité sur les créneaux</p>
+            <p>✓ Suivi d'apprentissage poussé</p>
+          </div>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20m%27inscrire%20au%20Cours%20Individuel%202H%20(70%E2%82%AC%2Fmois)" target="_blank" rel="noopener" class="btn-gold" style="display: block; width: 100%; text-align: center; background: transparent; border: 1px solid var(--accent, #d97706);">S'inscrire (2H/sem)</a>
+        <a href="https://api.whatsapp.com/send?phone=33651969750&text=Salam%20alaykoum%2C%20je%20souhaite%20m%27inscrire%20au%20Cours%20Individuel%202H%20(70%E2%82%AC%2Fmois)" target="_blank" rel="noopener" class="btn-gold" style="display: block; width: 100%; text-align: center;">S'inscrire (2H/sem)</a>
       </div>
 
     </div>
@@ -458,7 +464,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       <div class="avis-card">
         <div class="avis-quote">"</div>
         <div class="avis-stars">★★★★★</div>
-        <p class="avis-text">Je recommande cet institut ! Ma professeure d'arabe est vraiment au top : sérieuse, patiente, bienveillante, à l'écoute et très pédagogue. Elle prend toujours le temps de répondre à mes questions et s'adapte à mon rythme, ce qui rend les cours agréables et motivants. L'équipe est également très réactive, disponible et assure un excellent suivi. C'est un vrai plaisir d'apprendre dans ces conditions. Merci pour votre professionnalisme !</p>
+        <p class="avis-text">Je recommande cet institut ! Ma professeure d'arabe est vraiment au top : sérieuse, patiente, bienveillante, à l'écoute et très pédagogue. Elle prend toujours le temps de répondre à mes questions et s'adapte à mon rythme, ce qui rend les cours agréable et motivants. L'équipe est également très réactive, disponible et assure un excellent suivi. C'est un vrai plaisir d'apprendre dans ces conditions. Merci pour votre professionnalisme !</p>
         <div class="avis-sep"></div>
         <div class="avis-author">
           <div class="avis-avatar">M</div>
