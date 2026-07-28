@@ -26,23 +26,26 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-  /* Correctif spécifique pour la taille de la vidéo sur PC/Ordi */
+  /* Override pour forcer une vidéo TRÈS LARGE sur ordinateur */
   @media (min-width: 992px) {
+    .hero .container,
     .hero-inner {
+      max-width: 1400px !important; /* Elargit la zone globale du Hero */
       display: flex !important;
       align-items: center !important;
       justify-content: space-between !important;
-      gap: 40px !important;
+      gap: 50px !important;
+      width: 100% !important;
     }
     .hero-content {
-      flex: 1 1 45% !important;
-      max-width: 50% !important;
+      flex: 1 1 40% !important;
+      max-width: 45% !important;
     }
     .hero-visual {
-      flex: 1 1 55% !important;
+      flex: 1 1 60% !important;
       width: 100% !important;
-      max-width: 750px !important; /* Vidéo bien grande sur ordi */
-      min-width: 500px !important;
+      max-width: 1000px !important; /* Vidéo XXL sur PC */
+      min-width: 550px !important;
     }
   }
 </style>
@@ -134,7 +137,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       </div>
     </div>
     
-    <!-- Vidéo agrandie et responsive -->
+    <!-- Vidéo très large -->
     <div class="hero-visual">
       <div class="hero-image-frame" style="padding-top: 56.25%; position: relative; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 12px 35px rgba(0,0,0,0.35);">
         <iframe 
