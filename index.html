@@ -24,6 +24,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+  /* Correctif spécifique pour la taille de la vidéo sur PC/Ordi */
+  @media (min-width: 992px) {
+    .hero-inner {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 40px !important;
+    }
+    .hero-content {
+      flex: 1 1 45% !important;
+      max-width: 50% !important;
+    }
+    .hero-visual {
+      flex: 1 1 55% !important;
+      width: 100% !important;
+      max-width: 750px !important; /* Vidéo bien grande sur ordi */
+      min-width: 500px !important;
+    }
+  }
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,9 +134,9 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       </div>
     </div>
     
-    <!-- Vidéo agrandie dans le hero -->
-    <div class="hero-visual" style="width: 100%; max-width: 600px; margin: 0 auto;">
-      <div class="hero-image-frame" style="padding-top: 56.25%; position: relative; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <!-- Vidéo agrandie et responsive -->
+    <div class="hero-visual">
+      <div class="hero-image-frame" style="padding-top: 56.25%; position: relative; height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 12px 35px rgba(0,0,0,0.35);">
         <iframe 
           src="https://www.youtube.com/embed/qF54f6sBMEQ" 
           title="Présentation de Falah Institut" 
@@ -225,7 +248,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <div class="features-grid fade-in">
       
       <!-- Offre Groupe -->
-      <div class="feature-card" style="border: 1px solid var(--accent, #d97706); position: relative; text-align: center; display: flex; flex-direction: column; justify: space-between;">
+      <div class="feature-card" style="border: 1px solid var(--accent, #d97706); position: relative; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
         <div style="background: var(--accent, #d97706); color: #fff; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; position: absolute; top: -12px; left: 50%; transform: translateX(-50%);">
           Plus populaire
         </div>
