@@ -5,10 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falah Institut - Apprentissage de la Langue Arabe & Coran</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style de secours intégré si le style.css externe ne charge pas */
+        :root {
+            --primary: #0f172a;        /* Bleu Marine Profond */
+            --primary-hover: #1e293b;  
+            --accent: #d97706;         /* Doré / Ambré */
+            --accent-hover: #b45309;   
+            --accent-light: #fffbeb;   
+            --text-dark: #0f172a;      
+            --text-muted: #64748b;     
+            --bg-light: #f8fafc;       
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        
+        header { background: var(--white); border-bottom: 1px solid #e2e8f0; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+        .logo span { color: var(--accent); }
+        nav a { margin-left: 1.5rem; text-decoration: none; color: var(--text-muted); font-weight: 500; }
+        nav a:hover { color: var(--primary); }
+        .btn-nav { background-color: var(--accent); color: var(--white) !important; padding: 0.5rem 1.2rem; border-radius: 6px; font-weight: 600; text-decoration: none; }
+
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); color: var(--white); padding: 4rem 2rem; text-align: center; }
+        .hero-badge { background: rgba(217, 119, 6, 0.2); border: 1px solid var(--accent); color: #fef08a; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 1rem; font-weight: 800; }
+        .hero p { font-size: 1.1rem; color: #cbd5e1; max-width: 650px; margin: 0 auto 2rem auto; }
+        .hero-video-container { max-width: 700px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); border: 2px solid rgba(255, 255, 255, 0.1); }
+        .hero-video-container iframe { width: 100%; height: 380px; border: none; display: block; }
+
+        .pricing-section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header h2 { font-size: 2rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .section-header p { color: var(--text-muted); }
+
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .pricing-card { background: var(--white); border-radius: 12px; border: 1px solid #e2e8f0; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+        .pricing-card.popular { border: 2px solid var(--accent); }
+        .badge-popular { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--accent); color: var(--white); padding: 0.2rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
+
+        .card-header { text-align: center; padding-bottom: 1.5rem; border-bottom: 1px solid #f1f5f9; }
+        .card-title { font-size: 1.25rem; color: var(--primary); font-weight: 700; margin-bottom: 0.5rem; }
+        .price { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
+        .price span { font-size: 1rem; color: var(--text-muted); font-weight: 400; }
+        .subtitle { color: var(--accent); font-weight: 600; font-size: 0.95rem; margin-top: 0.25rem; }
+
+        .features-list { list-style: none; margin: 1.5rem 0; }
+        .features-list li { padding: 0.5rem 0; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+        .features-list li::before { content: "✓"; color: var(--accent); font-weight: bold; }
+
+        .btn-card { display: block; width: 100%; text-align: center; background: var(--primary); color: var(--white); padding: 0.8rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .btn-card.btn-accent { background: var(--accent); }
+
+        footer { background: var(--primary); color: #94a3b8; padding: 2rem; text-align: center; font-size: 0.9rem; margin-top: 3rem; }
+    </style>
 </head>
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- Navigation -->
     <header>
         <div class="logo">
             <span>Falah Institut</span>
@@ -28,7 +84,7 @@
         
         <!-- Vidéo de Présentation YouTube -->
         <div class="hero-video-container">
-            <iframe src="https://www.youtube.com/embed/VOTRE_ID_YOUTUBE" title="Présentation Falah Institut" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Présentation Falah Institut" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -55,7 +111,7 @@
                     <li>Suivi régulier du professeur</li>
                     <li>Supports de cours inclus</li>
                 </ul>
-                <a href="https://wa.me/VOTRE_NUMERO?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20en%20Groupe%20(35€/mois)" class="btn-card btn-accent" target="_blank">S'inscrire en Groupe</a>
+                <a href="https://wa.me/33000000000?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20en%20Groupe%20(35€/mois)" class="btn-card btn-accent" target="_blank">S'inscrire en Groupe</a>
             </div>
 
             <!-- Formule Individuel 1h -->
@@ -71,7 +127,7 @@
                     <li>Flexibilité d'horaires</li>
                     <li>Progression accélérée</li>
                 </ul>
-                <a href="https://wa.me/VOTRE_NUMERO?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20Individuel%201H%20(40€/mois)" class="btn-card" target="_blank">S'inscrire (1H / sem)</a>
+                <a href="https://wa.me/33000000000?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20Individuel%201H%20(40€/mois)" class="btn-card" target="_blank">S'inscrire (1H / sem)</a>
             </div>
 
             <!-- Formule Individuel 2h Intensive -->
@@ -87,7 +143,7 @@
                     <li>Priorité sur les créneaux</li>
                     <li>Suivi d'apprentissage poussé</li>
                 </ul>
-                <a href="https://wa.me/VOTRE_NUMERO?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20Individuel%202H%20(70€/mois)" class="btn-card" target="_blank">S'inscrire (2H / sem)</a>
+                <a href="https://wa.me/33000000000?text=Salam%20alaykoum,%20je%20souhaite%20m'inscrire%20au%20Cours%20Individuel%202H%20(70€/mois)" class="btn-card" target="_blank">S'inscrire (2H / sem)</a>
             </div>
 
         </div>
@@ -96,6 +152,7 @@
     <!-- Footer -->
     <footer id="contact">
         <p>Salam alaykoum — Falah Institut &copy; 2026. Tous droits réservés.</p>
+        <p style="margin-top: 0.5rem;">Contact direct & Inscriptions via WhatsApp</p>
     </footer>
 
 </body>
